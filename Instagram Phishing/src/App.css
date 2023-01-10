@@ -1,0 +1,191 @@
+.App {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.head {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.left {
+  width: 50%;
+  margin-right: 20px;
+}
+.left img {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form button {
+  background: #0095f6;
+  border: 0;
+  width: 100%;
+}
+.logo img {
+  width: 100%;
+}
+.logo {
+  width: 60%;
+  margin-bottom: 30px;
+}
+.form {
+  width: 80%;
+}
+.form .inputs {
+  width: 100%;
+}
+.form_input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form_input input {
+  padding: 9px 0px 7px 9px;
+  font-size: 12px;
+  width: 96%;
+  height: 1.2rem;
+  outline: none;
+  background: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+}
+.form button {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  background-color: #3897f0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+label {
+  position: absolute;
+  pointer-events: none;
+  left: 830px;
+  padding-bottom: 15px;
+  transform: translateY(10px);
+  line-height: 6px;
+  transition: all ease-out 0.1s;
+  font-size: 14px;
+  color: #999;
+  padding-top: 6px;
+}
+.label_usname {
+  top: 167px;
+}
+.label_pswr {
+  top: 209px;
+}
+/* label final position */
+input:not(:placeholder-shown) + label {
+  transform: translateY(0);
+  font-size: 11px;
+}
+
+/* input padding increases if placeholder is not shown */
+input:not(:placeholder-shown) {
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+
+input::placeholder {
+  visibility: hidden;
+}
+
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  margin-top: 6px;
+}
+
+.separator .line {
+  width: 115px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.loginWithFB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 50%;
+}
+.loginWithFB img {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.loginWithFB p span {
+  font-size: 12px;
+}
+
+.middle {
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  padding: 20px 40px;
+  background-color: #fafafa;
+  font-size: 14px;
+  width: 75%;
+  margin-bottom: 10px;
+}
+.middle p span {
+  color: #3897f0;
+  cursor: pointer;
+}
+
+.bottom {
+  text-align: center;
+}
+.getOnapp {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+.getOnapp img {
+  width: 35%;
+  cursor: pointer;
+}
+.foot {
+  width: 53%;
+  padding-top: 10px;
+}
+.foot img {
+  width: 100%;
+}
