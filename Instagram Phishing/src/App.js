@@ -17,7 +17,7 @@ function App() {
           <div className="right">
             <div className="top">
               <div className="logo">
-                <img src={logo} alt="" />
+                <div class="heading"></div>
               </div>
               <div className="form">
                 <div className="inputs">
