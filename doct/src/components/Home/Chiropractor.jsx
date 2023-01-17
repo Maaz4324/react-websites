@@ -148,7 +148,7 @@ const OfficeHourContainer = styled.div`
 `;
 
 const Line = styled.div`
-  border-bottom: 1px solid var(--txtgray);
+  border-bottom: 1px solid var(--lightgray);
   width: 50%;
   margin: 10px auto;
 `;

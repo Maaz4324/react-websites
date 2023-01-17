@@ -6,6 +6,7 @@ import instagram from "../images/instagram-icon.svg";
 import twitter from "../images/twitter-icon.svg";
 import youtube from "../images/youtube-icon.svg";
 import logo from "../images/logo.jpg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -27,9 +28,9 @@ function Navbar() {
       <NavLinks>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            {/* <a className="navbar-brand" href="#">
+            {/* <Link className="navbar-brand" to="#">
               Navbar
-            </a> */}
+            </Link> */}
             <button
               className="navbar-toggler"
               type="button"
@@ -47,29 +48,36 @@ function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <Link className="nav-link" aria-current="page" to="/">
                     HOME
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <Link className="nav-link" aria-current="page" to="/us">
                     ABOUT
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/patients">
                     PATIENTS
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/blog">
                     BLOG
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link className="nav-link" to="/contact">
                     CONTACT
-                  </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <button className="market_link_item">
+                    <Link className="nav-link market_link" to="/contact">
+                      MARKETPLACE
+                    </Link>
+                  </button>
                 </li>
                 <MediaContainerExpanded>
                   <H3>(423) 4243-646</H3>
@@ -141,6 +149,9 @@ const NavLogo = styled.div`
   text-align: center;
   background-color: var(--white);
   box-shadow: 2px 3px 10px black;
+  @media (max-width: 1086px) {
+    left: 3%;
+  }
   @media (max-width: 992px) {
     height: fit-content;
     width: 100%;
@@ -189,10 +200,32 @@ const NavLinks = styled.div`
   }
   .nav-link {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
+    &:hover {
+      transition: all ease 0.3s;
+      color: var(--blue);
+    }
     @media (max-width: 992px) {
       color: black !important;
+    }
+  }
+  .market_link {
+    &:hover {
+      color: black;
+    }
+  }
+  .market_link_item {
+    border: 0;
+    margin: 0 10px;
+    background-color: var(--blue);
+    @media (max-width: 992px) {
+      padding: 0 10px;
+      margin: 0;
+    }
+    &:hover {
+      transition: all ease 0.3s;
+      background-color: white;
     }
   }
   .container-fluid {
