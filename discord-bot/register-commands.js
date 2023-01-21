@@ -6,6 +6,10 @@ const commands = [
     name: "hey",
     description: "Replies with hi",
   },
+  {
+    name: "connect",
+    description: "Connect to your metamask wallet",
+  },
 ];
 
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_KEY);
