@@ -1,4 +1,5 @@
 const { Client, IntentsBitField } = require("discord.js");
+require("dotenv").config();
 
 const client = new Client({
   intents: [
@@ -13,12 +14,24 @@ client.on("ready", (c) => {
   console.log(`${c.user.tag} is online.`);
 });
 
+client.on("interactionCreate", (interaction) => {
+  if (!interaction.isChatInputCommand()) return;
+
+  if (interaction.commandName === "hey") {
+    interaction.reply("hey");
+  }
+});
+
 client.on("messageCreate", (message) => {
   if (message.author.bot) {
     return;
   }
 
-  if (message.content === "hello") {
+  if (
+    (message.content === "hello") |
+    (message.content === "hey") |
+    (message.content === "hi")
+  ) {
     message.reply("hello");
   }
 });
