@@ -6,23 +6,7 @@ let a = 3;
 let b = 3;
 
 async function connect() {
-  async () => {
-    console.log("working1");
-    try {
-      console.log("working2");
-      const provider = new ethers.providers.Web3Provider(
-        window.ethereum,
-        "any"
-      );
-      console.log("working");
-      // Prompt user for account connections
-      await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner();
-      console.log("Account:", await signer.getAddress());
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  async () => {};
 }
 
 const client = new Client({
@@ -38,7 +22,7 @@ client.on("ready", (c) => {
   console.log(`${c.user.tag} is online.`);
 });
 
-client.on("interactionCreate", (interaction) => {
+client.on("interactionCreate", async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
   if (interaction.commandName === "hey") {
@@ -46,9 +30,10 @@ client.on("interactionCreate", (interaction) => {
   }
 
   if (interaction.commandName === "connect") {
-    console.log(a + b);
-    console.log("working0");
-    connect();
+    interaction.reply(
+      `This command was run by ${interaction.user.username}, who joined on ${interaction.member.joinedAt}.`
+    );
+
     console.log("this is working");
   }
 });
