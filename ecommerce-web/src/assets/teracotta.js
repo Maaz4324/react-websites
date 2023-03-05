@@ -1,27 +1,33 @@
+import product from "../images/product1.png";
 export const teracottaData = [
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-    keyword: "metti ka pot",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-    keyword: "pot",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-    keyword: "pot",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-    keyword: "teracotta pot",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-    keyword: "jug",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
 ];

@@ -3,9 +3,18 @@ import styled from "styled-components";
 import logo from "../images/logo.jpeg";
 import search from "../images/search.svg";
 import phone from "../images/phone.svg";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ linkState }) {
   const [searchInput, setSearchInput] = useState();
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      console.log(`/shop/${searchInput.toLowerCase()}`);
+      setSearchInput("");
+    }
+  };
+
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     // document.getElementById("main").style.marginLeft = "0";
@@ -14,6 +23,11 @@ function Navbar() {
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     // document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function setLink(to) {
+    localStorage.setItem("link", to);
+    linkState(to);
   }
 
   return (
@@ -31,66 +45,69 @@ function Navbar() {
               <Links>
                 <ul>
                   <li>
-                    <a href="/">
+                    <Link to="/">
                       <h5>Home</h5>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/shop/teracotta">
+                    <Link
+                      to="/shop/teracotta"
+                      onClick={() => setLink("teracotta")}
+                    >
                       <h5>Teracotta</h5>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/shop/frames">
+                    <Link to="/shop/frames" onClick={() => setLink("frames")}>
                       <h5>Frames</h5>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/shop/wall-clock">
+                    <Link to="/shop/clock" onClick={() => setLink("clock")}>
                       <h5>Clock</h5>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/contact">
+                    <Link to="/contact">
                       <h5>Contact</h5>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </Links>
               <Collapse>
                 <Sidebar id="mySidebar">
-                  <a
-                    href="javascript:void(0)"
+                  <Link
+                    to="javascript:void(0)"
                     onClick={closeNav}
                     className="closebtn"
                   >
                     ×
-                  </a>
+                  </Link>
                   <ul>
                     <li>
-                      <a href="/">
+                      <Link to="/">
                         <h5>Home</h5>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/shop/teracotta">
+                      <Link to="/shop/teracotta">
                         <h5>Teracotta</h5>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/shop/frames">
+                      <Link to="/shop/frames">
                         <h5>Frames</h5>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/shop/wall-clock">
+                      <Link to="/shop/wall-clock">
                         <h5>Clock</h5>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact">
+                      <Link to="/contact">
                         <h5>Contact</h5>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </Sidebar>
@@ -109,7 +126,7 @@ function Navbar() {
                 placeholder="search here"
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
-                // onKeyDown={handleKeyDown}
+                onKeyDown={handleKeyDown}
               />
             </Search>
             <Phone>

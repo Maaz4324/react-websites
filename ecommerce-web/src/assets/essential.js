@@ -1,58 +1,23 @@
+import product from "../images/product1.png";
 export const essentialData = [
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
-  },
-  {
-    img: "/images/product1.png",
-    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
 ];

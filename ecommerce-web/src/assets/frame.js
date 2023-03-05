@@ -1,14 +1,38 @@
+import product from "../images/product1.png";
 export const frameData = [
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
   {
-    img: "/images/product1.png",
+    img: product,
     name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
   },
 ];

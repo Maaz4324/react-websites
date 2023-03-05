@@ -5,6 +5,7 @@ import frame from "../images/frame.jpg";
 import clock from "../images/clock.jpg";
 import showpiece from "../images/showpiece.jpg";
 import essentials from "../images/essentials.jpg";
+import { Link } from "react-router-dom";
 
 function Category() {
   return (
@@ -13,41 +14,41 @@ function Category() {
         <CategoryContainer>
           <h1>Featured Categories</h1>
           <ImgContainer>
-            <a href="/shop/teracotta" className="img img1">
+            <Link to="/shop/teracotta" className="img img1">
               <div className="img img1">
                 <div className="clock one">
                   <h2>Teracotta items</h2>
                 </div>
               </div>
-            </a>
-            <a href="/shop/frames" className="img img2">
+            </Link>
+            <Link to="/shop/frames" className="img img2">
               <div className="img img2">
                 <div className="clock two">
                   <h2>Frames</h2>
                 </div>
               </div>
-            </a>
-            <a href="/shop/wall-clock" className="img img3">
+            </Link>
+            <Link to="/shop/clock" className="img img3">
               <div className="img img3">
                 <div className="clock three">
                   <h2>Wall clock</h2>
                 </div>
               </div>
-            </a>
-            <a href="/shop/show-pieces" className="img img4">
+            </Link>
+            <Link to="/shop/show" className="img img4">
               <div>
                 <div className="clock four">
                   <h2>Show pieces</h2>
                 </div>
               </div>
-            </a>
-            <a href="/shop/essentials" className="img img5">
+            </Link>
+            <Link to="/shop/essentials" className="img img5">
               <div>
                 <div className="clock five">
                   <h2>Home essential</h2>
                 </div>
               </div>
-            </a>
+            </Link>
           </ImgContainer>
         </CategoryContainer>
       </Container>
