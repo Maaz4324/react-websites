@@ -35,4 +35,19 @@ export const frameData = [
     name: "lorem lorem lorem lorem",
     keyword: "wall clock",
   },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
+  {
+    img: product,
+    name: "lorem lorem lorem lorem",
+    keyword: "wall clock",
+  },
 ];

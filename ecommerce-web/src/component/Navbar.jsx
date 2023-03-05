@@ -3,14 +3,17 @@ import styled from "styled-components";
 import logo from "../images/logo.jpeg";
 import search from "../images/search.svg";
 import phone from "../images/phone.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar({ linkState }) {
+  const navigate = useNavigate();
   const [searchInput, setSearchInput] = useState();
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      console.log(`/shop/${searchInput.toLowerCase()}`);
+      navigate(`/shop/${searchInput.trim().toLowerCase()}`);
+      localStorage.setItem("search", searchInput);
+      linkState(searchInput);
       setSearchInput("");
     }
   };

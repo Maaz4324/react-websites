@@ -10,8 +10,30 @@ import { useState, useEffect } from "react";
 function Shop({ directTo }) {
   const [pageData, setPageData] = useState([]);
   const [head, setHead] = useState(directTo);
+  const dataArray = [
+    teracottaData,
+    essentialData,
+    frameData,
+    showData,
+    clockData,
+  ];
 
   useEffect(() => {
+    let elemNo = 0;
+    for (let i = 0; i < dataArray.length; i++) {
+      const element = dataArray[i].filter((data) => data.keyword == directTo);
+      if (element.length != 0) {
+        setPageData(element);
+        elemNo++;
+      }
+    }
+    if (elemNo == 0) {
+      setPageData([]);
+    }
+  }, [directTo]);
+
+  useEffect(() => {
+    // localStorage.setItem("search", directTo);
     if (directTo == "teracotta") {
       setPageData(teracottaData);
     }
