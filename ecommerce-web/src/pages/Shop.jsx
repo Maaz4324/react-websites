@@ -91,7 +91,6 @@ const Container = styled.div`
   max-width: 947px;
   margin: 0 auto;
   min-height: 100vh;
-  border: 2px solid red;
   @media (max-width: 700px) {
     padding-top: 180px;
   }
@@ -99,7 +98,7 @@ const Container = styled.div`
 
 const ItemContainer = styled.div`
   display: grid;
-  grid-template-columns: 32.3% 32.3% 32.3%;
+  grid-template-columns: 32.3% 32.3% auto;
   grid-gap: 10px;
   @media (max-width: 700px) {
     grid-template-columns: 50% 50%;
@@ -134,17 +133,17 @@ const Txt = styled.div`
 const Item = styled.div`
   background: var(--lightgray);
   padding: 30px;
-  border: 2px solid red;
+  height: 60vh;
+  display: flex;
+  align-items: center;
   &:hover {
     transition: all 0.8s;
     background: rgb(139, 182, 224);
     cursor: pointer;
-    min-height: 61.3vh;
   }
   &:hover ${ImgContainer} {
     transition: all 0.8s;
     display: none;
-    border: 2px solid red;
   }
   &:hover ${Txt} {
     transition: all 0.8s;
