@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route
             path={"/shop/" + jumpTo}
-            element={<Shop directTo={jumpTo} />}
+            element={<Shop directTo={jumpTo.trim()} />}
           />
           <Route path="/shop/show" element={<Shop directTo="show" />} />
           <Route

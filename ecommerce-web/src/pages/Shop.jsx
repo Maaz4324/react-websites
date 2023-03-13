@@ -5,6 +5,7 @@ import { essentialData } from "../assets/essential";
 import { frameData } from "../assets/frame";
 import { showData } from "../assets/show";
 import { clockData } from "../assets/clock";
+import { sculptureData } from "../assets/sculpture";
 import { useState, useEffect } from "react";
 
 function Shop({ directTo }) {
@@ -16,12 +17,15 @@ function Shop({ directTo }) {
     frameData,
     showData,
     clockData,
+    sculptureData,
   ];
 
   useEffect(() => {
     let elemNo = 0;
     for (let i = 0; i < dataArray.length; i++) {
-      const element = dataArray[i].filter((data) => data.keyword == directTo);
+      const element = dataArray[i].filter((data) =>
+        data.keyword.includes(directTo)
+      );
       if (element.length != 0) {
         setPageData(element);
         elemNo++;
@@ -48,6 +52,9 @@ function Shop({ directTo }) {
     }
     if (directTo == "clock") {
       setPageData(clockData);
+    }
+    if (directTo == "sculpture") {
+      setPageData(sculptureData);
     }
     setHead(directTo.charAt(0).toUpperCase() + directTo.slice(1));
   }, [directTo]);
@@ -84,6 +91,7 @@ const Container = styled.div`
   max-width: 947px;
   margin: 0 auto;
   min-height: 100vh;
+  border: 2px solid red;
   @media (max-width: 700px) {
     padding-top: 180px;
   }
@@ -126,10 +134,12 @@ const Txt = styled.div`
 const Item = styled.div`
   background: var(--lightgray);
   padding: 30px;
+  border: 2px solid red;
   &:hover {
     transition: all 0.8s;
     background: rgb(139, 182, 224);
     cursor: pointer;
+    min-height: 61.3vh;
   }
   &:hover ${ImgContainer} {
     transition: all 0.8s;

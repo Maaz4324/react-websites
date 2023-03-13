@@ -10,9 +10,9 @@ function Navbar({ linkState }) {
   const [searchInput, setSearchInput] = useState();
 
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && searchInput.trim() != "") {
       navigate(`/shop/${searchInput.trim().toLowerCase()}`);
-      localStorage.setItem("search", searchInput);
+      localStorage.setItem("search", searchInput.trim());
       linkState(searchInput);
       setSearchInput("");
     }
