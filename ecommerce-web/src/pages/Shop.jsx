@@ -26,8 +26,15 @@ function Shop({ directTo }) {
       const element = dataArray[i].filter((data) =>
         data.keyword.includes(directTo)
       );
+      const nameWords = dataArray[i].filter((data) =>
+        data.name.toLowerCase().includes(directTo.toLowerCase())
+      );
+      console.log("🚀 ~ file: Shop.jsx:32 ~ useEffect ~ nameWords:", nameWords);
       if (element.length != 0) {
         setPageData(element);
+        elemNo++;
+      } else if (nameWords.length != 0) {
+        setPageData(nameWords);
         elemNo++;
       }
     }
@@ -136,6 +143,7 @@ const Item = styled.div`
   height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   &:hover {
     transition: all 0.8s;
     background: rgb(139, 182, 224);
@@ -153,7 +161,12 @@ const Item = styled.div`
     height: 100%;
   }
   @media (max-width: 554px) {
-    padding: 10px;
     min-height: 27vh;
+  }
+  @media (max-width: 480px) {
+    height: 40vh;
+  }
+  @media (max-width: 370px) {
+    height: 32vh;
   }
 `;
