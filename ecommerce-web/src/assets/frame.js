@@ -16,8 +16,11 @@ import frame14 from "../images/frames/photo frame 2_page-0014.png";
 const keywords = [
   "frame",
   "photo frame",
+  "photo frames",
   "frames",
   "table frame",
+  "wall frames",
+  "wall frame",
   "couple frames",
   "couple frame",
 ];
