@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Category() {
   return (
     <Wrapper>
-      <Container>
+      <Container id="shopCategory">
         <CategoryContainer>
           <h1>Featured Categories</h1>
           <ImgContainer>

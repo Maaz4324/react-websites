@@ -1,54 +1,33 @@
-import product from "../images/product1.png";
+import clock1 from "../images/clock/Jobson_catalouge_page-0001.png";
+import clock2 from "../images/clock/Jobson_catalouge_page-0002.png";
+import god1 from "../images/lovely god 2022_page-0008.png";
+import show1 from "../images/show/Disco Light August 22_page-0002.png";
+import frame1 from "../images/frames/photo frame 2_page-0001.png";
+import essen from "../images/essentials/product (1).png";
 
 export const bestData = [
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: clock1,
+    name: "Clock",
   },
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: god1,
+    name: "God",
   },
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: clock2,
+    name: "Clock",
   },
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: show1,
+    name: "Show piece",
   },
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: frame1,
+    name: "Photo frame",
   },
   {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
-  },
-  {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
-  },
-  {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
-  },
-  {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
-  },
-  {
-    img: product,
-    name: "Photo Frame",
-    price: "2100",
+    img: essen,
+    name: "Home essentials",
   },
 ];

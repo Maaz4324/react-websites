@@ -14,7 +14,9 @@ function HeroSec() {
             aliquam odio, asperiores vel? Ad alias odit debitis modi ullam
             dolorem iure doloribus?
           </p>
-          <button>Shop now</button>
+          <a href="#shopCategory">
+            <button>Shop now</button>
+          </a>
         </Left>
         <Right>
           <div className="imgContainer">
@@ -48,6 +50,7 @@ const Left = styled.div`
   max-width: 897px;
   padding: 30px;
   padding-left: 10%;
+  color: rgb(0, 0, 0);
   button {
     padding: 10px 30px;
     font-weight: 600;
@@ -60,7 +63,6 @@ const Left = styled.div`
   &:hover {
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0);
-    color: rgb(0, 0, 0);
   }
   @media (max-width: 991px) {
     width: 90%;

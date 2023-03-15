@@ -42,11 +42,7 @@ const ItemContainer = styled.div`
   display: grid;
   grid-template-columns: 24.3% 24.3% 24.3% 24.3%;
   grid-gap: 10px;
-  img {
-    width: 100%;
-    background: var(--lightgray);
-    padding: 20px;
-  }
+
   @media (max-width: 1047px) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -62,6 +58,11 @@ const ItemContainer = styled.div`
 
 const ImgContainer = styled.div`
   width: 100%;
+  img {
+    width: 100%;
+    background: var(--lightgray);
+    padding: 20px;
+  }
 `;
 
 const Txt = styled.div`
@@ -76,6 +77,11 @@ const Txt = styled.div`
 
 const Item = styled.div`
   cursor: pointer;
+  background: var(--lightgray);
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     transition: all 0.8s;
     background: rgb(139, 182, 224);
@@ -83,7 +89,6 @@ const Item = styled.div`
   &:hover ${ImgContainer} {
     transition: all 0.8s;
     display: none;
-    border: 2px solid red;
   }
   &:hover ${Txt} {
     transition: all 0.8s;
@@ -92,5 +97,14 @@ const Item = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%;
+  }
+  @media (max-width: 554px) {
+    min-height: 27vh;
+  }
+  @media (max-width: 480px) {
+    height: 40vh;
+  }
+  @media (max-width: 370px) {
+    height: 32vh;
   }
 `;
