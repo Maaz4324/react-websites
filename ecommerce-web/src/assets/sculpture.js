@@ -89,7 +89,18 @@ import god88 from "../images/god/god and buddha_page-0029.png";
 
 //make seperate keywords for new gods
 
-const keywordArr = ["god", "gods", "scultures", "sculpture", "murti", "dev"];
+const keywordArr = [
+  "god",
+  "gods",
+  "scultures",
+  "sculpture",
+  "murti",
+  "dev",
+  "gods frame",
+  "god frame",
+  "god frames",
+  "gods frames",
+];
 export const sculptureData = [
   {
     img: god1,

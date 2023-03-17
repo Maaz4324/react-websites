@@ -1,5 +1,6 @@
 import { bestData } from "../assets/best";
 import styled from "styled-components";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Best() {
   return (
@@ -10,7 +11,7 @@ export default function Best() {
           {bestData.map((data, idx) => (
             <Item key={idx}>
               <ImgContainer>
-                <img src={data.img} alt={data.name} />
+                <LazyLoadImage src={data.img} alt={data.name} />
               </ImgContainer>
               <Txt>
                 <h5>{data.name}</h5>

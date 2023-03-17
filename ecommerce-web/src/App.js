@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Shop from "./pages/Shop";
 import { useState, useEffect } from "react";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [jumpTo, setJumpTo] = useState("");
@@ -22,11 +23,12 @@ function App() {
     <Router>
       <Wrapper className="App">
         <Navbar linkState={setLinkChange} />
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route
             path={"/shop/" + jumpTo}
-            element={<Shop directTo={jumpTo.trim()} />}
+            element={<Shop directTo={jumpTo} />}
           />
           <Route path="/shop/show" element={<Shop directTo="show" />} />
           <Route

@@ -7,6 +7,7 @@ import { showData } from "../assets/show";
 import { clockData } from "../assets/clock";
 import { sculptureData } from "../assets/sculpture";
 import { useState, useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Shop({ directTo }) {
   const [pageData, setPageData] = useState([]);
@@ -75,7 +76,13 @@ function Shop({ directTo }) {
           {pageData.map((data, idx) => (
             <Item key={idx}>
               <ImgContainer>
-                <img src={data.img} alt={data.name} />
+                {" "}
+                <LazyLoadImage
+                  src={data.img}
+                  // width={600}
+                  // height={400}
+                  alt={data.name}
+                />
               </ImgContainer>
               <Txt>
                 <h5>{data.name}</h5>
