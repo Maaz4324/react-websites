@@ -8,10 +8,36 @@ import { clockData } from "../assets/clock";
 import { sculptureData } from "../assets/sculpture";
 import { useState, useEffect } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #747474",
+  boxShadow: 24,
+  p: 4,
+  "@media (max-width: 500px)": {
+    width: 300,
+    padding: "15px",
+  },
+  "@media (max-width: 360px)": {
+    width: "80%",
+  },
+};
 
 function Shop({ directTo }) {
   const [pageData, setPageData] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
   const [head, setHead] = useState(directTo);
+  const [bigImg, setBigImg] = useState();
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => setOpen(false);
   const dataArray = [
     teracottaData,
     essentialData,
@@ -67,20 +93,38 @@ function Shop({ directTo }) {
     setHead(directTo.charAt(0).toUpperCase() + directTo.slice(1));
   }, [directTo]);
 
+  function openModal(img) {
+    setBigImg(img);
+
+    setOpen(true);
+  }
+
   return (
     <Wrapper>
       <Container>
         <h1>{head}</h1>
         <hr />
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <img src={bigImg} style={{ width: "100%" }} alt="" />
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              To purchase the item or for any queries contact: 8017265141 or
+              e-mail here: mrityunjaysingh65@gmail.com
+            </Typography>
+          </Box>
+        </Modal>
         <ItemContainer>
           {pageData.map((data, idx) => (
-            <Item key={idx}>
+            <Item key={idx} onClick={() => openModal(data.img)}>
               <ImgContainer>
-                {" "}
                 <LazyLoadImage
                   src={data.img}
-                  // width={600}
-                  // height={400}
+                  style={{ width: "100%" }}
                   alt={data.name}
                 />
               </ImgContainer>
@@ -175,5 +219,22 @@ const Item = styled.div`
   }
   @media (max-width: 370px) {
     height: 32vh;
+  }
+`;
+
+const ModalShowImg = styled.div`
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  position: sticky;
+  top: 0%;
+  left: 50%;
+  box-shadow: 0px 0px 10px #cccccc;
+  border-radius: 10px;
+  z-index: 1000;
+  img {
+    width: 50%;
   }
 `;

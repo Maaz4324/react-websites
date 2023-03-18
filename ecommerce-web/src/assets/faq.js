@@ -1,13 +1,13 @@
 export const faqData = [
   {
-    title: "We believe in providing products.",
+    title: "How can we purchase the product?",
     content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
     laborum cupiditate possimus labore, hic temporibus velit dicta earum
     suscipit commodi eum enim atque at? Et perspiciatis dolore iure
     voluptatem.`,
   },
   {
-    title: "All financial transactions are done with CC Avenue Gateway.",
+    title: "Who do I contact in case of a query/complaint?",
     content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
     reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
     quaerat iure quos dolorum accusantium ducimus in illum vero commodi
@@ -16,7 +16,13 @@ export const faqData = [
     Repudiandae, mollitia id reprehenderit a ab odit!`,
   },
   {
-    title: "We have tied up with some",
+    title: "Are your products bpa free?",
+    content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+    quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+    dolor ut sequi minus iste? Quas?`,
+  },
+  {
+    title: "What is covered under waranty?",
     content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
     quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
     dolor ut sequi minus iste? Quas?`,

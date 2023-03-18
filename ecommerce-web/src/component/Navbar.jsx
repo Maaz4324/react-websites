@@ -103,7 +103,7 @@ function Navbar({ linkState }) {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/shop/wall-clock">
+                      <Link to="/shop/clock">
                         <h5>Clock</h5>
                       </Link>
                     </li>
