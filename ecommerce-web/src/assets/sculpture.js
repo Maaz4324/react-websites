@@ -86,8 +86,66 @@ import god85 from "../images/god/god and buddha_page-0026.png";
 import god86 from "../images/god/god and buddha_page-0027.png";
 import god87 from "../images/god/god and buddha_page-0028.png";
 import god88 from "../images/god/god and buddha_page-0029.png";
+import gd1 from "../images/god/aditya frame_page-0001.jpg";
+import gd2 from "../images/god/aditya frame_page-0002.jpg";
+import gd3 from "../images/god/aditya frame_page-0003.jpg";
+import gd4 from "../images/god/aditya frame_page-0004.jpg";
+import gd5 from "../images/god/aditya frame_page-0005.jpg";
+import gd6 from "../images/god/aditya frame_page-0006.jpg";
+import gd7 from "../images/god/aditya frame_page-0007.jpg";
+import gd8 from "../images/god/aditya frame_page-0008.jpg";
+import gd9 from "../images/god/aditya frame_page-0009.jpg";
+import gd10 from "../images/god/aditya frame_page-0010.jpg";
+import gd11 from "../images/god/aditya frame_page-0011.jpg";
+import gd12 from "../images/god/aditya frame_page-0012.jpg";
+import gd13 from "../images/god/aditya frame_page-0013.jpg";
+import gd14 from "../images/god/aditya frame_page-0014.jpg";
+import gd15 from "../images/god/aditya frame_page-0015.jpg";
+import gd16 from "../images/god/aditya frame_page-0016.jpg";
+import gd17 from "../images/god/aditya frame_page-0017.jpg";
+import gd18 from "../images/god/aditya frame_page-0018.jpg";
+import gd19 from "../images/god/aditya frame_page-0019.jpg";
+import gd20 from "../images/god/aditya frame_page-0020.jpg";
+import gd21 from "../images/god/aditya frame_page-0021.jpg";
+import gd22 from "../images/god/aditya frame_page-0022.jpg";
+import gd23 from "../images/god/aditya frame_page-0023.jpg";
+import gd24 from "../images/god/aditya frame_page-0024.jpg";
+import gd25 from "../images/god/aditya frame_page-0025.jpg";
+import gd27 from "../images/god/aditya frame_page-0027.jpg";
+import gd28 from "../images/god/aditya frame_page-0028.jpg";
+import gd29 from "../images/god/aditya frame_page-0029.jpg";
+import gd30 from "../images/god/aditya frame_page-0030.jpg";
+import gd31 from "../images/god/aditya frame_page-0031.jpg";
+import gd32 from "../images/god/aditya frame_page-0032.jpg";
+import gd33 from "../images/god/aditya frame_page-0033.jpg";
+import gd34 from "../images/god/aditya frame_page-0034.jpg";
+import gd35 from "../images/god/aditya frame_page-0035.jpg";
+import cg1 from "../images/god/cabinet_page-0001.jpg";
+import cg2 from "../images/god/cabinet_page-0002.jpg";
+import cg3 from "../images/god/cabinet_page-0003.jpg";
+import cg4 from "../images/god/cabinet_page-0004.jpg";
+import cg5 from "../images/god/cabinet_page-0005.jpg";
+import cg6 from "../images/god/cabinet_page-0006.jpg";
+import cg7 from "../images/god/cabinet_page-0007.jpg";
+import cg8 from "../images/god/cabinet_page-0008.jpg";
+import cg9 from "../images/god/cabinet_page-0009.jpg";
+import cg10 from "../images/god/cabinet_page-0010.jpg";
 
 //make seperate keywords for new gods
+
+const keywordArr1 = [
+  "god",
+  "gods",
+  "scultures",
+  "sculpture",
+  "murti",
+  "dev",
+  "cabinet",
+  "god cabinet",
+  "cabinets",
+  "god in cabinet",
+  "cabinet god",
+];
 
 const keywordArr = [
   "god",
@@ -106,6 +164,11 @@ export const sculptureData = [
     img: god1,
     name: "Ankur God",
     keyword: keywordArr,
+  },
+  {
+    img: cg1,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god2,
@@ -133,8 +196,13 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
-    img: god6,
-    name: "Gujgamini",
+    img: cg2,
+    name: "Cabinet God",
+    keyword: keywordArr1,
+  },
+  {
+    img: gd1,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -143,9 +211,19 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: god6,
+    name: "Gujgamini",
+    keyword: keywordArr,
+  },
+  {
     img: god80,
     name: "God",
     keyword: keywordArr,
+  },
+  {
+    img: cg3,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god8,
@@ -158,9 +236,19 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd2,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god71,
     name: "God",
     keyword: keywordArr,
+  },
+  {
+    img: cg4,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god63,
@@ -178,8 +266,18 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: cg5,
+    name: "Cabinet God",
+    keyword: keywordArr1,
+  },
+  {
     img: god11,
     name: "Sahaj God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd3,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -191,6 +289,11 @@ export const sculptureData = [
     img: god13,
     name: "Sonprayag",
     keyword: keywordArr,
+  },
+  {
+    img: cg6,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god65,
@@ -206,6 +309,16 @@ export const sculptureData = [
     img: god82,
     name: "God",
     keyword: keywordArr,
+  },
+  {
+    img: gd4,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: cg7,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god14,
@@ -228,6 +341,16 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: cg8,
+    name: "Cabinet God",
+    keyword: keywordArr1,
+  },
+  {
+    img: gd5,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god66,
     name: "God",
     keyword: keywordArr,
@@ -243,14 +366,29 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: cg9,
+    name: "Cabinet God",
+    keyword: keywordArr1,
+  },
+  {
     img: god18,
     name: "Menka",
+    keyword: keywordArr,
+  },
+  {
+    img: gd6,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
     img: god19,
     name: "Damodar God",
     keyword: keywordArr,
+  },
+  {
+    img: cg10,
+    name: "Cabinet God",
+    keyword: keywordArr1,
   },
   {
     img: god73,
@@ -265,6 +403,11 @@ export const sculptureData = [
   {
     img: god20,
     name: "Bamboo God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd7,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -283,6 +426,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd8,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god22,
     name: "Kiskananda God",
     keyword: keywordArr,
@@ -298,8 +446,18 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd9,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god74,
     name: "God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd35,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -318,6 +476,16 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd10,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: gd34,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god69,
     name: "God",
     keyword: keywordArr,
@@ -333,8 +501,18 @@ export const sculptureData = [
     keyword: [keywordArr, "mukun", "mukun God", "mukun sculpture"],
   },
   {
+    img: gd33,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god75,
     name: "God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd11,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -348,6 +526,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd32,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god31,
     name: "Rash behari",
     keyword: [keywordArr, "rash", "behari"],
@@ -358,13 +541,38 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd12,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: gd31,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god33,
     name: "Dev sakshi",
     keyword: keywordArr,
   },
   {
+    img: gd13,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god34,
     name: "Shyam Pankh",
+    keyword: keywordArr,
+  },
+  {
+    img: gd14,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: gd30,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -393,8 +601,18 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd15,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god38,
     name: "Liberty God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd29,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -413,6 +631,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd16,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god88,
     name: "God",
     keyword: keywordArr,
@@ -423,6 +646,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd28,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god42,
     name: "Dev lok God",
     keyword: keywordArr,
@@ -430,6 +658,11 @@ export const sculptureData = [
   {
     img: god43,
     name: "Dev Bhakti",
+    keyword: keywordArr,
+  },
+  {
+    img: gd17,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -448,8 +681,18 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd27,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god46,
     name: "Letter holder",
+    keyword: keywordArr,
+  },
+  {
+    img: gd18,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -473,6 +716,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd19,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god48,
     name: "Colorful",
     keyword: keywordArr,
@@ -485,6 +733,16 @@ export const sculptureData = [
   {
     img: god50,
     name: "God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd20,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: gd25,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {
@@ -508,6 +766,11 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd21,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god54,
     name: "God",
     keyword: keywordArr,
@@ -523,6 +786,16 @@ export const sculptureData = [
     keyword: keywordArr,
   },
   {
+    img: gd24,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
+    img: gd22,
+    name: "Aditya God Frame",
+    keyword: keywordArr,
+  },
+  {
     img: god56,
     name: "God",
     keyword: keywordArr,
@@ -535,6 +808,11 @@ export const sculptureData = [
   {
     img: god58,
     name: "God",
+    keyword: keywordArr,
+  },
+  {
+    img: gd23,
+    name: "Aditya God Frame",
     keyword: keywordArr,
   },
   {

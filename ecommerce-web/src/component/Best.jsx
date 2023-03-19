@@ -69,7 +69,9 @@ export default function Best() {
   );
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  background: var(--bg);
+`;
 
 const Container = styled.div`
   padding: 40px 30px;
@@ -106,7 +108,7 @@ const ImgContainer = styled.div`
   width: 100%;
   img {
     width: 100%;
-    background: var(--lightgray);
+    background-color: white;
     padding: 20px;
   }
 `;
@@ -123,11 +125,11 @@ const Txt = styled.div`
 
 const Item = styled.div`
   cursor: pointer;
-  background: var(--lightgray);
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
   &:hover {
     transition: all 0.8s;
     background: rgb(139, 182, 224);

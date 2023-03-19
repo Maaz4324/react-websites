@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import clock from "../images/clock.png";
+import clock from "../images/clockBg.png";
 
 function HeroSec() {
   return (
@@ -8,12 +8,7 @@ function HeroSec() {
       <Container>
         <Left>
           <h1>Wall clock</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-            mollitia recusandae earum quas explicabo illo sequi similique
-            aliquam odio, asperiores vel? Ad alias odit debitis modi ullam
-            dolorem iure doloribus?
-          </p>
+          <p>Don't watch the clock; do what it does. Keep going.</p>
           <a href="#shopCategory">
             <button>Shop now</button>
           </a>
@@ -72,9 +67,10 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  width: 100%;
+  width: 60%;
   max-width: 897px;
   text-align: center;
+  margin: 0 auto;
   img {
     width: 100%;
     max-width: 500px;

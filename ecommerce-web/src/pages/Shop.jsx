@@ -103,6 +103,10 @@ function Shop({ directTo }) {
     <Wrapper>
       <Container>
         <h1>{head}</h1>
+        <p>
+          To purchase the item or for any queries contact: 8017265141 or e-mail
+          here: mrityunjaysingh65@gmail.com
+        </p>
         <hr />
         <Modal
           open={open}
