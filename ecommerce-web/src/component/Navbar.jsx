@@ -98,6 +98,21 @@ function Navbar({ linkState }) {
                       </Link>
                     </li>
                     <li>
+                      <Link to="/shop/gods">
+                        <h5>Gods</h5>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/shop/essentials">
+                        <h5>Home Essentials</h5>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/shop/show">
+                        <h5>Show pieces</h5>
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/shop/frames">
                         <h5>Frames</h5>
                       </Link>
